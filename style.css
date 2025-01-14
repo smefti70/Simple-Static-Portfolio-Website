@@ -1,0 +1,281 @@
+:root {
+    --text-color: #1a1c20;
+    --link-hover-color: #2e5bff;
+    --background-color: #eeeff1;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    color: var(--text-color);
+    background-color: var(--background-color);
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+a {
+    color: var(--link-color);
+    text-decoration: none;
+}
+
+nav .right a:hover {
+    color: var(--link-hover-color);
+}
+
+/*Navbar Section Styles*/
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    height: 80px;
+}
+
+nav .left a{
+    color: var(--text-color);
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+nav .right a {
+    color: var(--text-color);
+    font-size: 1rem;
+    font-weight: 500;
+    margin: 0 1.5rem;
+}
+
+nav .right a span {
+    margin-left: 0.25rem;
+}
+
+
+/*Hero Section Styles*/
+.hero-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+    margin: 2rem 0;
+    margin-bottom: 150px;
+    gap: 2rem;
+}
+.hero-section-description{
+    flex: 5;
+}
+.hero-section-description h1{
+    font-size: 45px;
+}
+.hero-section-img{
+    display: flex;
+    justify-content: right;
+    flex: 3;
+}
+.hero-section-img img{
+    width: 300px;
+    border-radius: 25%;
+}
+
+.hero-section-links{
+    display: flex;
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+.hero-section-links a{
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 500;
+    background-color: var(--background-color);
+    border: 2px solid var(--text-color);
+    color: var(--text-color);
+}
+
+.hero-section-links a:hover{
+    border: 2px solid var(--link-hover-color);
+    background-color: var(--link-hover-color);
+    color: var(--background-color);
+}
+
+.hero-section-links a span{
+    margin-left: 0.25rem;
+}
+
+/*Skills Section Styles*/
+.skills-section{
+    text-align: center;
+    margin: 2rem 0;
+    margin-bottom: 150px;
+}
+
+.skills-section h2{
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.skills-section-description{
+    margin-top: 1rem;
+}
+
+.skills-btns{
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+.skills-btns .btn{
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 500;
+    background-color: var(--background-color);
+    border: 2px solid var(--text-color);
+    color: var(--text-color);
+}
+
+/*Projects Section Styles*/
+.projects-section{
+    margin: 2rem 0;
+    margin-bottom: 150px;
+}
+.projects-section h2{
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.projects-description{
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.projects-section-projects{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 1rem;
+}
+
+.projects-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-card{
+    width: 70%;
+    background-color: var(--background-color);
+    border: 2px solid var(--text-color);
+    border-radius: 5px;
+    padding: 1rem;
+    margin: 1rem 0;
+}
+
+.project-card img{
+    width: 100%;
+    border-radius: 5px;
+}
+
+.project-card h3{
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 1rem;
+}
+
+.project-card p{
+    margin-top: 1rem;
+}
+
+.project-card a{
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 500;
+    background-color: var(--text-color);
+    color: var(--background-color);
+    
+}
+
+.project-card a:hover{
+    background-color: var(--link-hover-color);
+    color: var(--background-color);
+}
+
+/*Contact Section Styles*/
+.contact-section {
+    padding: 0 50px;
+    margin-bottom: 100px;
+}
+
+.contact-section h2 {
+    font-size: 35px;
+}
+
+.contact-section .group {
+    display: flex;
+    gap: 50px;
+}
+
+.contact-section .group .text {
+    flex: 3;
+}
+
+.contact-section .group form {
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-section .group form input,
+.contact-section .group form textarea {
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
+    background-color: transparent;
+    padding: 10px;
+    margin-bottom: 10px;
+    outline: none;
+    border: 2px solid var(--link-hover-color);
+    border-radius: 10px;
+}
+
+.contact-section .group form input:focus,
+.contact-section .group form textarea:focus {
+    border-color: var(--text-color); 
+}
+
+.contact-section .group form button {
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
+    background-color: var(--link-hover-color);
+    padding: 10px;
+    margin-bottom: 10px;
+    outline: none;
+    border: 2px solid var(--link-hover-color);
+    border-radius: 10px;
+    cursor: pointer;
+    color: white;
+}
+
+.contact-section .group form button:hover {
+    background-color: var(--text-color);
+    color: var(--background-color);
+    border: 2px solid var(--text-color);
+}
+
+/*Footer Section Styles*/
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: black;
+    color: white;
+}
